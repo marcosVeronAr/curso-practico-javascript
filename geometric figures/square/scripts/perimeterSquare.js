@@ -1,5 +1,6 @@
+//* Esta función recibe el lado de un cuadrado y te devuelve su perimetro
+
 function squarePerimeter(lado){
     return lado * lado
 }
 
-console.log("El perimetro del cuadrado es", squarePerimeter(4))
