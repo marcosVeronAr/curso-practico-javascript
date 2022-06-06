@@ -2,6 +2,7 @@
 
 
 function squareArea(lado){
-    return lado * lado
+    area = lado * lado
+    return "El area es: " + area
 }
 
