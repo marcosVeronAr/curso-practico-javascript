@@ -5,3 +5,12 @@ function squarePerimeter(lado){
     return "El perimetro es: " + perimeter
 }
 
+// Conectando función a HTML
+
+function calcularPerimetroCuadrado(){
+    const INPUT = document.getElementById("INPUT_CUADRADO")
+    const VALUE = INPUT.value
+    const RESULTADO = squarePerimeter(VALUE)
+
+    return RESULTADO
+}

@@ -6,3 +6,14 @@ function squareArea(lado){
     return "El area es: " + area
 }
 
+// Conectando función a HTML
+
+function calcularAreaCuadrado(){
+    const INPUT = document.getElementById("INPUT_CUADRADO")
+    const VALUE = INPUT.value 
+    const RESULTADO = squareArea(VALUE)
+
+    
+    return RESULTADO
+}
+
