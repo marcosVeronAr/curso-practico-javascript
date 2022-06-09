@@ -15,6 +15,6 @@ function calcularDescuento(){
     let resultado = getDiscounts(Precio,Descuento)
     
     const resultP = document.getElementById("resultP")
-    return resultP.innerText = "El precio con descuento son: $" +  resultado
+    return resultP.innerText = "El precio con descuento es: $" +  resultado
 
 }
