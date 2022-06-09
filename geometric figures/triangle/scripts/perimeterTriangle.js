@@ -1,6 +1,6 @@
 function trianglePerimeter(lado1,lado2,lado3){
     perimeter = lado1 + lado2 + lado3
-    return "El perimetro es: " + perimeter
+    return perimeter
 }
 
 // creamos la función para HTML 
@@ -17,5 +17,7 @@ function calcularPerimetroTriangulo(){
 
     const PERIMETRO = trianglePerimeter(VALUE_A,VALUE_B,VALUE_BASE)
     
-    return PERIMETRO
+    let resultPerimetro = document.getElementById("resultPerimetro")
+    
+    return resultPerimetro.innerText = "El perimetro es: " + PERIMETRO
 }

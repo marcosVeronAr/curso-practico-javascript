@@ -1,7 +1,7 @@
 function circleArea(diametro){
     radio = diametro/2
     area = Math.PI * (radio * radio)
-    return "El area es: " + area
+    return area
 }
 
 // Creamos la función para HTML 
@@ -11,5 +11,7 @@ function calcularAreaCirculo(){
     const VALUE = INPUT.value
     const AREA = circleArea(VALUE)
 
-    return AREA
+    let resultArea = document.getElementById("resultArea")
+    
+    return resultArea.innerText = "El area de tu circulo es: " + AREA
 }
