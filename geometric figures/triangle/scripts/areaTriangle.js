@@ -1,6 +1,6 @@
 function triangleArea(base,altura){
     area = (base * altura)/2
-    return "El area es: " + area
+    return area
 }
 
 // Conectamos con HTML 
@@ -13,5 +13,8 @@ function calcularAreaTriangulo(){
     const VALUE_BASE = Number(BASE.value)
 
     const AREA = triangleArea(VALUE_BASE,VALUE_ALTURA)
-    return AREA
+
+    let resultArea = document.getElementById("resultArea")
+    
+    return resultArea.innerText = "El area es: " + AREA
 }   

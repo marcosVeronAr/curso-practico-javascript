@@ -3,7 +3,7 @@
 
 function squareArea(lado){
     area = lado * lado
-    return "El area es: " + area
+    return area
 }
 
 // Conectando función a HTML
@@ -12,8 +12,9 @@ function calcularAreaCuadrado(){
     const INPUT = document.getElementById("INPUT_CUADRADO")
     const VALUE = INPUT.value 
     const RESULTADO = squareArea(VALUE)
+    let resultArea = document.getElementById("resultArea")
 
     
-    return RESULTADO
+    return resultArea.innerText = "El area es: " + RESULTADO
 }
 

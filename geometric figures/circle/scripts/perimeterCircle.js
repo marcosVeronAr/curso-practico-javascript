@@ -1,7 +1,7 @@
 
 function circlePerimeter(diametro){
     perimeter = diametro * Math.PI
-    return "El perimetro es: " + perimeter
+    return perimeter
 }
 
 // Creamos la función para HTML 
@@ -11,5 +11,7 @@ function calcularPerimetroCirculo() {
     const VALUE = INPUT.value 
     const PERIMETRO = circlePerimeter(VALUE)
 
-    return PERIMETRO
+    let resultPerimetro = document.getElementById("resultPerimetro")
+
+    return resultPerimetro.innerText = "El perimetro es de: " + PERIMETRO
 }
