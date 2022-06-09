@@ -1,8 +1,6 @@
 function getDiscounts(precio,descuento){
-    precioDescuento = precio * ( 100 - descuento) /100
-    return `El precio original es: ${precio}
-    Su descuento es de: ${descuento}
-    Total: ${precioDescuento}`
+    let precioDescuento = precio * ( 100 - descuento) /100
+    return precioDescuento
 }
 
 //Función en HTML 
@@ -14,5 +12,9 @@ function calcularDescuento(){
     let inputDescuento = document.getElementById("inputDescuento")
     let Descuento = inputDescuento.value
 
-    return getDiscounts(Precio,Descuento)
+    let resultado = getDiscounts(Precio,Descuento)
+    
+    const resultP = document.getElementById("resultP")
+    return resultP.innerText = "El precio con descuento son: $" +  resultado
+
 }
