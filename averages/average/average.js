@@ -17,3 +17,17 @@ function mediaAritmetica(array) {
     lista = lista/array.length
     return lista
 }
+ 
+
+function calcularPromedioHTML(lista){
+    const resultadoPromedio = document.getElementById('resultadoPromedio')
+    
+    const inputPromedio = document.getElementById('inputPromedio')
+    const valuePromedio = inputPromedio.value 
+
+    let arrayPromedio = Array.from(valuePromedio.split(","), Number);
+
+    const RESULTADOPROMEDIO= calcularMediaAritmetica(arrayPromedio) 
+
+    return resultadoPromedio.innerText = `El promedio entre ${valuePromedio} es: ${RESULTADOPROMEDIO}`
+}
