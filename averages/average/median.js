@@ -65,7 +65,7 @@ function calcularMedianaHTML(lista){
 
   
   const resultado = calcularMediana(arrayMediana) //* Usamos la función que creamos antes y devolvemos la mediana
-
+  console.log(resultado)
   
   return resultadoP.innerText = `La mediana entre ${input.value} es: ${resultado}` //* retornamos el resultado
 }

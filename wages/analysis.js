@@ -1,4 +1,4 @@
-//utilidad para funciones
+//utils
 
 function mediaAritmetica(array) {
     
@@ -36,8 +36,8 @@ function medianaSalarios(lista) {
         const personitaMitad1 = lista[mitad - 1]
         const personitaMitad2 = lista[mitad]
 
-        const promedio = mediaAritmetica([personitaMitad1,personitaMitad2])
-        return promedio
+        const mediana = mediaAritmetica([personitaMitad1,personitaMitad2])
+        return mediana
 
     } else {
         const personitaMitad = lista [mitad]
@@ -45,3 +45,29 @@ function medianaSalarios(lista) {
     }
 
 }
+
+// Mediana General
+
+const salariosCol = colombia.map(
+    function (personita) {
+      return personita.salary;
+    }
+  );
+  
+  const medianaGeneralCol = medianaSalarios(salariosColSorted);
+  
+  // Mediana del top 10%
+  const spliceStart = (salariosColSorted.length * 90) / 100;
+  const spliceCount = salariosColSorted.length - spliceStart;
+  
+  const salariosColTop10 = salariosColSorted.splice(
+    spliceStart,
+    spliceCount,
+  );
+  
+  const medianaTop10Col = medianaSalarios(salariosColTop10);
+  
+  console.log({
+    medianaGeneralCol,
+    medianaTop10Col,
+  });

@@ -7,9 +7,36 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <article>
+        <form action="">
+            
+            <h2>Añada una nueva persona!</h2>
+            <label for="inputNombre">Nombre</label>
+            <input type="text" id="inputNombre">
+            <label for="inputSalario">Salario</label>
+            <input type="text" id="inputSalario" placeholder="1400,1600,300000 ...">
+            <button type="button" onclick="agregarPersonaHTML()">Añadir</button>
+
+            <p id="AgregarPersona"></p>
+
+            
+
+            
+            <button type="button" onclick="medianaGeneralHTML()">Media General</button>
+            
+            <p id="generalP"></p>
+
+            <button type="button" onclick="top10HTML()">Media General top 10</button>
+            <p id="top10HTML"></p>
+
+            <button type="button" onclick="mostrarListaCol()">Mostrar Lista</button>
+            <p id="mostrarlista"></p>
+        </form>
+    </article>
+</section>
 
     <script src="Salary/Salary.js"></script>
     <script src="analysis.js"></script>
+    <script src="analisis.js"></script>
 </body>
 </html>
